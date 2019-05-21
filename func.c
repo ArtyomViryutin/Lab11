@@ -18,7 +18,7 @@ int check_string(char *str)
 	for (int i = 0; i < strlen(str) - 1; i++)  // Проверка на ввод только латинских букв
 	{
 
-		if (!(str[i] >= 'A' && str[i] <= 'Z' || str[i] >= 'a' && str[i] <= 'z' || str[i] == ' ' || str[i] == '\n'))
+		if (!(str[i] >= 'a' && str[i] <= 'z' || str[i] == ' ' || str[i] == '\n'))
 		{
 			printf("Entered unacceptable string.Try again.\n");
 			system("pause");
